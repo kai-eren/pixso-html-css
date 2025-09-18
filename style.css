@@ -31,7 +31,7 @@ header{
 
 
 
-.btn{
+.cta-btn{
     padding: 16px 32px;
     border-radius: 524px;
     color: #fff;
@@ -43,8 +43,11 @@ header{
 
 }
 
-.btn.dark{
+.cta-btn.dark{
     background: var(--black); 
+    position: relative;
+    top:50px;
+    right:20px;
 }
 
 
@@ -76,11 +79,7 @@ nav ul{
 
 .hero-section{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1240px;
-    width:100%;
-    padding: 40px;
+    background:var(--lightgray);
 }
 
 .gray-background{
@@ -99,7 +98,7 @@ nav ul{
 
 
 .hero-section .right img{
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -107,12 +106,28 @@ nav ul{
 
 
 .hero-section .left{
-    max-width: 50%;
+    flex: 1;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:100px 0 40px 77px; 
+    z-index: 1;
+    position: relative;
 }
 
+.hero-section .left .counter{
+    display: flex;
+    gap: 10px;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 132%; 
+}
 
-
-
+.hero-section .left .counter span{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+}
 
 .companylogo{
     position: absolute;
@@ -120,7 +135,20 @@ nav ul{
     top: 20px;
 }
 
+.hero-section .left .left-body{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
 
+.hero-section .left .content-wrap{
+    padding-right: 50px;
+}
+
+
+.hero-section .right{
+    flex: 1;
+}
 
 .left h1{
     color: rgba(29, 32, 40, 1);
@@ -129,7 +157,9 @@ nav ul{
     font-weight: 700;
     letter-spacing: -2%;
     text-align: left;
-
+    position: relative;
+    top:-50px;
+    left:3px;
 }
 
 
@@ -139,6 +169,21 @@ nav ul{
     font-family: Prompt;
     font-size: 18px;
     font-weight: 400;
-    text-align: left;
-    margin-left: 350px;
+    margin-bottom: 95px;
+    line-height:1;
+}
+
+
+.arrows-area{
+    display: flex;
+    gap: 10px;
+}
+
+
+.bg-shape{
+    z-index:-1;
+    position: absolute;
+    width: 100%;
+    top:160px;
+    height:80%;
 }
