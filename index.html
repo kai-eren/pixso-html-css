@@ -15,85 +15,128 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
   </head>
-  <body>
-    <header>
-      <div class="wrapper">
-        <nav>
-          <img src="images/companyname.png" alt="Company Logo" class="logo" />
-          <img src="images/firstpage/logo.png" alt="logo" class="companylogo" />
-          <ul class="top-right-header">
-            <li>
-              <a href="#">MAIN</a>
-            </li>
+<body>
+  <header>
+    <div class="wrapper">
+      <nav>
+        <img src="images/companyname.png" alt="Company Logo" class="logo" />
+        <img src="images/firstpage/logo.png" alt="logo" class="companylogo" />
+        <ul class="top-right-header">
+          <li><a href="#">MAIN</a></li>
+          <li><a href="#">GET MOVING</a></li>
+          <li><a href="#">WHO WE SERVE</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="swiper">
+      <div class="swiper-wrapper">
 
-            <li>
-              <a href="#">GET MOVING</a>
-            </li>
-
-            <li>
-              <a href="#">WHO WE SERVE</a>
-            </li>
-
-            <li>
-              <a href="#">ABOUT</a>
-            </li>
-
-            <li>
-              <a href="#">BLOG</a>
-            </li>
-
-            <li>
-              <a href="#">CONTACT</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- End of desktop navigation menu -->
-      </div>
-    </header>
-    <main>
-      <div class="container">
-        <div class="hero-section">
-          <div class="left">
-            <div class="counter">01 <span>/ 03</span></div>
-            
-            <div class="left-body">
-            <img src="images/firstpage/design.png" alt="left-design" class="bg-shape">
-
-              <h1>CULTURE BY DESIGN</h1>
-
-              <div class="content-wrap">
-                <p>
-                  Define your company culture, and connect with your employees
-                  through fitness and wellness
-                </p>
-
-                <a href="#" class="cta-btn dark">WHO WE SERVE</a>
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="hero-section">
+              <div class="left">
+                <div class="counter">01 <span>/ 03</span></div>
+                <div class="left-body">
+                  <img src="images/firstpage/design.png" class="bg-shape" />
+                    <h1>
+                      CULTURE BY DESIGN
+                    </h1>
+                  <div class="content-wrap">
+                    <p>Define your company culture, and connect with your employees through fitness and wellness</p>
+                    <a href="#" class="cta-btn dark">WHO WE SERVE</a>
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <img src="images/firstpage/femalerunner.png" alt="Runner 1" />
               </div>
             </div>
-            <div class="arrows-area">
-                <a href="#" class="arrow arrow-left">
-                    <img src="images/firstpage/left-arrow.svg" alt="left-arrow" />
-                </a>
-                <a href="#" class="arrow arrow-right">
-                    <img src="images/firstpage/right-arrow.svg" alt="right-arrow">
-                </a>
-            </div>
-          </div>
-
-          <div class="right">
-            <img src="images/firstpage/femalerunner.png" alt="Female Runner" />
           </div>
         </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="hero-section">
+              <div class="left">
+                <div class="counter">02 <span>/ 03</span></div>
+                <div class="left-body">
+                  <img src="images/firstpage/design.png" class="bg-shape" />
+                  <h1 class="second-slide-heading">
+                    TRANSFORM YOUR <br>COMMON SPACE INTO A <br>VIBRANT CULTURE HUB
+                  </h1>
+                  <div class="content-wrap">
+                    <p>Culture connects employees like nothing else - and your employees love to move!</p>
+                    <a href="#" class="cta-btn dark">WHAT WE OFFER</a>
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <img src="images/secondpage/malerunner.png" alt="Runner 2" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="hero-section">
+              <div class="left">
+                <div class="counter">03 <span>/ 03</span></div>
+                <div class="left-body">
+                  <img src="images/firstpage/design.png" class="bg-shape" />
+                  <h1 class = "third-slide-heading">
+                    HAPPINESS <br> HAPPENS AT WORK
+                  </h1>
+                  <div class="content-wrap">
+                    <p>We craft environments your employees will love to be in</p>
+                    <a href="#" class="cta-btn dark">ABOUT US</a>
+                  </div>
+                </div>
+              </div>
+              <div class="right">
+                <img src="images/thirdpage/Frame.png" alt="Runner 3" />
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </main>
-    <footer></footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-    <!-- End of header section -->
-    <script src="script.js"></script>
-  </body>
+
+      <div class="swiper-button-prev arrow arrow-left">
+        <img src="images/firstpage/left-arrow.svg" alt="left-arrow" />
+      </div>
+      <div class="swiper-button-next arrow arrow-right">
+        <img src="images/firstpage/right-arrow.svg" alt="right-arrow" />
+      </div>
+    </div>
+  </main>
+
+  <footer></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+  loop: true,
+  navigation: {
+    nextEl: '.arrow-right', 
+    prevEl: '.arrow-left',  
+  },
+  });
+  </script>
+</body>
 </html>

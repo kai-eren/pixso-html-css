@@ -8,7 +8,7 @@
 
 
 *,
-*::after
+*::after,
 *::before{
     box-sizing: border-box;
 }
@@ -121,6 +121,7 @@ nav ul{
     font-size: 42px;
     font-weight: 700;
     line-height: 132%; 
+    position:absolute;
 }
 
 .hero-section .left .counter span{
@@ -177,6 +178,8 @@ nav ul{
 .arrows-area{
     display: flex;
     gap: 10px;
+    position: relative;
+
 }
 
 
@@ -184,6 +187,12 @@ nav ul{
     z-index:-1;
     position: absolute;
     width: 100%;
-    top:160px;
+    bottom:0;
+    left:0;
     height:80%;
+}
+
+
+.second-slide-heading{
+    font-size:42px;
 }
