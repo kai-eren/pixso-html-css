@@ -151,6 +151,15 @@ nav ul{
 
 .hero-section .right{
     flex: 1;
+    height: 810px;
+}
+
+
+
+.hero-section .right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .left h1{
@@ -202,11 +211,9 @@ nav ul{
     display: flex;
     gap: 10px;
     justify-content: flex-start;
-    position:absolute;
-    width: auto;
-    bottom:70px;
-    z-index: 10;
-    left: 300px;
+    position: relative;
+    top: -175px;
+    padding-left: 75px;
     
 
 }
@@ -216,7 +223,24 @@ nav ul{
     top: -90px; 
 }
 
+@media (max-width: 1199px) {
+    .left h1{
+        font-size: 30px;
+        margin-bottom: 55px;
+    }
 
+    .hero-section .right{
+        flex: 1;
+        height: 625px;
+    }
+
+    .left p{
+
+        margin-bottom: 45px;
+    }
+
+
+}
 
 
 @media (max-width: 992px) {
@@ -232,6 +256,7 @@ nav ul{
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
+        display: none;
     }
 
     .top-right-header li a{
@@ -241,15 +266,17 @@ nav ul{
 
     }
     .arrows-area{
-        left: 100px;
-        bottom: 170px;
+        position: absolute;
+        top: 465px;
+        right: 50px;
+
     }
     .hero-section .left .content-wrap {
         position: relative; 
     }
 
     .hero-section {
-        flex-direction: row;
+        flex-direction: column;
         text-align: left;
         gap: 20px; 
         align-items: center;
@@ -273,11 +300,6 @@ nav ul{
         }
 
 
-    .left p{
-        font-size: 15px;
-        width: 40%;
-        text-align: center;
-    }
 
 
     .left h1{
@@ -301,8 +323,11 @@ nav ul{
 
     
 
-    .left h1, .left p, .cta-btn.dark {
-        text-align: center;
+
+
+    .hero-section .right{
+        flex: none;
+        width: 100%;
         }
 
 
@@ -317,4 +342,49 @@ nav ul{
         background-size: 100% auto;
         padding-top: 140px;
     }
+}
+
+
+
+
+
+
+.who-we-serve .hero-section .left{
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: contain;
+}
+
+.who-we-serve .hero-section {
+  position: relative;
+  min-height: 80vh;
+  background: var(--lightgray);
+}
+
+
+.who-we-serve .hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("images/secondpage/background.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 52%;
+  z-index: 2;
+  pointer-events: none;
+  background-position: 10% bottom;
+
+}
+
+
+.who-we-serve .hero-section > * {
+  position: relative;
+  z-index: 3;
+}
+
+
+.who-we-serve .right {
+  position: relative;
+  z-index: 1;
 }
