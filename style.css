@@ -349,33 +349,15 @@ nav ul{
 
 
 
-.who-we-serve .hero-section .left{
-  background-image: none;
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: contain;
-}
 
 .who-we-serve .hero-section {
   position: relative;
-  min-height: 80vh;
+  min-height: 60vh;
   background: var(--lightgray);
 }
 
 
-.who-we-serve .hero-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("images/secondpage/background.png");
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: 52%;
-  z-index: 2;
-  pointer-events: none;
-  background-position: 10% bottom;
 
-}
 
 
 .who-we-serve .hero-section > * {
@@ -388,3 +370,71 @@ nav ul{
   position: relative;
   z-index: 1;
 }
+
+.serve-section {
+  padding: 120px 0;
+  position: relative;
+}
+
+.serve-section .container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;    
+}
+
+
+.serve-section .corpo-row,
+.serve-section .edu-row,
+.serve-section .tenant-row {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  position: relative;
+}
+
+.corpo-image,
+.edu-image,
+.tenant-image {
+  flex: 1;
+  position: relative;
+  z-index: 2;
+}
+
+
+.corpo-text h2,
+.edu-text h2,
+.tenant-text h2 {
+    color: rgba(38, 36, 36, 1);
+    font-family: "Exo 2", sans-serif;
+    font-style: normal;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 2%;
+    text-align: left;
+}
+
+.corpo-description,
+.edu-description,
+.tenant-description {
+    color: rgba(38, 36, 36, 1);
+    font-family: "Prompt", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 110%;
+    letter-spacing: 1%;
+    text-align: left;
+}
+
+.corpo-finisher,
+.edu-finisher,
+.tenant-finisher {
+    color: rgba(38, 36, 36, 1);
+    font-family: "Prompt", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: 1%;
+    text-align: left;
+}
+
